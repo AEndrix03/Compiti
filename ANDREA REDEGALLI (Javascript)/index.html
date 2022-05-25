@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Andrea Redegalli</title>
+    <script src="js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Andrea Redegalli</h1>
+
+    <form action="gestione.html">
+        <label for="username">Username</label>
+        <input type="text" id="username">
+
+        <br>
+        <label for="password">Password</label>
+            <input type="password" id="password">
+
+        <input type="button" value="Visualizza password" id="visPassword" onclick="visualizzaPassword()">
+        <br>
+        <input type="submit" value="Invia" id="send" onclick="return validateForm();">
+
+    </form>
+
+</body>
+</html>

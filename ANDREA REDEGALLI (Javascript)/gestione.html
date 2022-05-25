@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestione Prodotti</title>
+    <script src="js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Andrea Redegalli (Gestione)</h1>
+
+    <h3>Inserisci un prodotto</h3>
+    <form>
+        <label for="marcaProdotto">Marca:</label>
+        <input type="text" id="marcaProdotto">
+        <br>
+        <label for="modelloProdotto">Modello:</label>
+        <input type="text" id="modelloProdotto">
+        <br>
+        <label for="amountProdotto">Quantità:</label>
+        <input type="text" id="amountProdotto">
+        <br>
+        <label for="prezzoProdotto">Prezzo:</label>
+        <input type="text" id="prezzoProdotto">
+        <br>
+        <input type="button" value="Aggiungi Prodotto" id="addProdotto" onclick="return insertProdotto();">
+    </form>
+    <br>
+
+    <h3>Vendi un prodotto</h3>
+    <form>
+        <label for="modelloProdottoVend">Modello:</label>
+        <input type="text" id="modelloProdottoVend">
+        <br>
+        <label for="amountProdottoVend">Quantità:</label>
+        <input type="text" id="amountProdottoVend">
+        <br>
+        <input type="button" value="Vendi Prodotto" id="sellProdotto" onclick="return vendiProdotto();">
+    </form>
+
+    <br>
+    <br>
+
+    <input type="button" id="listProdotti" value="Visualizza Prodotti" onclick="visualizzaProdotti()">
+    <p id="listProdottiVis" ></p>
+
+    <form action="elabora_dati.asp" name="moduloDati">
+        <label for="sendData"></label>
+        <input type="submit" id="sendData" value="Invia tutti i Dati" onclick="sendData()">
+    </form>
+
+
+</body>
+</html>
